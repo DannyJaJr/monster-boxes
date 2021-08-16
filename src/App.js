@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { CardList } from './components/card-list/card-list.component'
 import { SearchBox } from './components/search-box/seach-box.components';
+import './App.css'
 
 export class App extends Component {
   constructor(){
@@ -32,6 +33,7 @@ export class App extends Component {
       monster.name.toLowerCase().includes(searchField.toLowerCase()))
     return (
       <div className='App'>
+      <h1>Monster Madness</h1>
       
           <SearchBox
           placeholder="search monsters" 
