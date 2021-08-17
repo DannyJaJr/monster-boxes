@@ -9,7 +9,8 @@ export class App extends Component {
 
     this.state= {
       monsters: [],
-      searchField: ''
+      searchField: '',
+     
 
     }
     
@@ -21,7 +22,7 @@ export class App extends Component {
   }
 
   handleChange =(e) => {
-    this.setState({ searchField: e.target.value})
+    this.setState({ searchField: e.target.value, title: e.target.value})
   }
 
 
